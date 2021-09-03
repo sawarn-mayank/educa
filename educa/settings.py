@@ -27,7 +27,7 @@ SECRET_KEY = 'bsm9q1oi9^bf5dh!kbrw29#xdr@mjf5l1q(grx-0ngrdtacj0z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [*]
+ALLOWED_HOSTS = ['127.0.0.1', 'educasaw.herokuapp.com']
 
 
 # Application definition
