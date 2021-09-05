@@ -25,10 +25,10 @@ from django.views.static import serve
 from django.views.decorators.cache import cache_page
 
 urlpatterns = [
-    path('accounts/login/', auth_views.LoginView.as_view(), name='login'),
-    path('accounts/logout/', auth_views.LogoutView.as_view(), name='logout'),
+    path('login/', auth_views.LoginView.as_view(), name='login'),
+    path('logged_out/', auth_views.LogoutView.as_view(), name='logged_out'),
     path('admin/', admin.site.urls),
-    path('course/', include('courses.urls')),
+    path('courses/', include('courses.urls')),
     path('', CourseListView.as_view(), name='course_list'),
     path('students/', include('students.urls')),
     path('api/', include('courses.api.urls', namespace='api')),
